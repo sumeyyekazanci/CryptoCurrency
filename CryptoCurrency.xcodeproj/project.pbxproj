@@ -11,6 +11,11 @@
 		D7C9E4DC2880B49C00454F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E4DB2880B49C00454F75 /* ContentView.swift */; };
 		D7C9E4DE2880B49F00454F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C9E4DD2880B49F00454F75 /* Assets.xcassets */; };
 		D7C9E4E12880B49F00454F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C9E4E02880B49F00454F75 /* Preview Assets.xcassets */; };
+		D7C9E4E92880B4DC00454F75 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E4E82880B4DC00454F75 /* Home.swift */; };
+		D7C9E4EC2880B54100454F75 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E4EB2880B54100454F75 /* CryptoModel.swift */; };
+		D7C9E4EF2880B7FD00454F75 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E4EE2880B7FD00454F75 /* CryptoViewModel.swift */; };
+		D7C9E4F128816F7200454F75 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9E4F028816F7200454F75 /* LineGraph.swift */; };
+		D7C9E4F4288179A600454F75 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D7C9E4F3288179A600454F75 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		D7C9E4DB2880B49C00454F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7C9E4DD2880B49F00454F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C9E4E02880B49F00454F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7C9E4E82880B4DC00454F75 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D7C9E4EB2880B54100454F75 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		D7C9E4EE2880B7FD00454F75 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		D7C9E4F028816F7200454F75 /* LineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C9E4F4288179A600454F75 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +61,9 @@
 		D7C9E4D82880B49C00454F75 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				D7C9E4ED2880B7B300454F75 /* ViewModel */,
+				D7C9E4EA2880B52200454F75 /* Model */,
+				D7C9E4E72880B4C800454F75 /* View */,
 				D7C9E4D92880B49C00454F75 /* CryptoCurrencyApp.swift */,
 				D7C9E4DB2880B49C00454F75 /* ContentView.swift */,
 				D7C9E4DD2880B49F00454F75 /* Assets.xcassets */,
@@ -65,6 +78,31 @@
 				D7C9E4E02880B49F00454F75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7C9E4E72880B4C800454F75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9E4F028816F7200454F75 /* LineGraph.swift */,
+				D7C9E4E82880B4DC00454F75 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7C9E4EA2880B52200454F75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9E4EB2880B54100454F75 /* CryptoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7C9E4ED2880B7B300454F75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9E4EE2880B7FD00454F75 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = CryptoCurrency;
+			packageProductDependencies = (
+				D7C9E4F3288179A600454F75 /* SDWebImageSwiftUI */,
+			);
 			productName = CryptoCurrency;
 			productReference = D7C9E4D62880B49C00454F75 /* CryptoCurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = D7C9E4CD2880B49C00454F75;
+			packageReferences = (
+				D7C9E4F2288179A600454F75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = D7C9E4D72880B49C00454F75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C9E4DC2880B49C00454F75 /* ContentView.swift in Sources */,
+				D7C9E4E92880B4DC00454F75 /* Home.swift in Sources */,
+				D7C9E4EC2880B54100454F75 /* CryptoModel.swift in Sources */,
 				D7C9E4DA2880B49C00454F75 /* CryptoCurrencyApp.swift in Sources */,
+				D7C9E4F128816F7200454F75 /* LineGraph.swift in Sources */,
+				D7C9E4EF2880B7FD00454F75 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7C9E4F2288179A600454F75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7C9E4F3288179A600454F75 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7C9E4F2288179A600454F75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7C9E4CE2880B49C00454F75 /* Project object */;
 }
