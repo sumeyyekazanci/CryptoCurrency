@@ -21,9 +21,9 @@ struct Home: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("Bitcoin")
+                        Text(coin.name)
                             .font(.callout)
-                        Text("BTC")
+                        Text(coin.symbol.uppercased())
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
